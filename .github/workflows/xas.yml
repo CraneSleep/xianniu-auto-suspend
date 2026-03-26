@@ -7,6 +7,7 @@ on:
   schedule:
     # 注意：这是 UTC 时间 20:00，对应 UTC+8 时间的次日凌晨 04:00
     - cron: "0 20 * * *"
+  workflow_dispatch: # 添加了这个触发器，允许在 GitHub 网页端手动运行
 
 jobs:
   run-script:
